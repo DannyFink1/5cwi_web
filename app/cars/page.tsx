@@ -9,20 +9,38 @@ const motor: Motor = {
     serialNumber: 3545653
 }
 
-const car: Car = {
-    name: "Subaru",
-    type: "Fast",
-    color: "Green",
-    motor: motor
-}
+const cars: Car[] = [
+    {
+        name: "Subaru",
+        type: "Fast",
+        color: "Green",
+        motor: motor
+    },
+    {
+        name: "Klaas",
+        type: "Slow",
+        color: "Blueberry",
+        motor: motor
+    },
+    {
+        name: "Baumgartner",
+        type: "Sieben",
+        color: "Braun",
+        motor: motor
+    },
+    {
+        name: "Ferrari",
+        type: "Superfast",
+        color: "Red",
+        motor: motor
+    },
+
+]
 
 export default function Cars({}: Props) {
   return (
     <div>
-        <Card car={car}/>
-
-
-
+        {cars.map((car: Car)=><Card car={car}/>)}
     </div>
   )
 }

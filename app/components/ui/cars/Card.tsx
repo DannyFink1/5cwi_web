@@ -5,6 +5,6 @@ type Props = {car: Car}
 
 export default function Card({car}: Props) {
   return (
-    <div className='bg-fuchsia-200 p-4 border'>Card: {car.name}</div>
+    <div className='bg-blue-900 p-4 m-2 border'>Card: {car.name}</div>
   )
 }
