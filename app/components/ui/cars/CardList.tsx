@@ -6,7 +6,7 @@ type Props = {cars: Car[]}
 
 export default function CardList({cars}: Props) {
   return (
-     <div className='flex'>
+     <div className='flex '>
             {cars.map((car: Car)=><Card car={car}/>)}
         </div>
   )
